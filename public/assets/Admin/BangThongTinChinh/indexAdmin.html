@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="../../img/favicon.png" type="image/x-icon">
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+  <link rel="stylesheet"
+    href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+  <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="styleAdmin.css">
+  <title>Durian Traceability For Admin</title>
+</head>
+
+<body>
+  <input type="checkbox" id="menu-toggle">
+  <div class="sidebar">
+    <div class="side-content">
+      <div class="profile">
+        <div class="profile-img bg-img" style="background-image: url(../../img/admin.png)"></div>
+        <h4>Admin</h4>
+        <small>Nhà quản lý hệ thống</small>
+      </div>
+
+      <div class="side-menu">
+        <ul>
+          <li>
+            <a href="" class="active">
+              <span class="las la-home"></span>
+              <small>Bảng điều khiển chính</small>
+            </a>
+          </li>
+          <li>
+            <a href="../HoSo/indexHoSo.html">
+              <span class="las la-user-alt"></span>
+              <small>Hồ sơ</small>
+            </a>
+          </li>
+          <li>
+            <a href="../BieuDo/indexBieuDo.html">
+              <span class="las la-chart-area"></span>
+              <small>Biểu đồ</small>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="main-content">
+
+    <header>
+      <div class="header-content">
+        <label for="menu-toggle">
+          <span class="las la-bars"></span>
+        </label>
+
+        <div class="header-menu">
+          <label for="">
+            <span class="las la-search"></span>
+          </label>
+
+          <div class="notify-icon">
+            <span class="las la-envelope"></span>
+            <span class="notify">0</span>
+          </div>
+
+          <div class="notify-icon">
+            <span class="las la-bell"></span>
+            <span class="notify">0</span>
+          </div>
+
+          <div class="user">
+            <div class="bg-img" style="background-image: url(..img/1.jpeg)"></div>
+
+            <span class="las la-power-off"></span>
+            <span><a href="../../Đăng nhập/IndexLogin.html" style="color: black;">Đăng xuất</a></span>
+        </div>
+        </div>
+      </div>
+    </header>
+
+
+    <main>
+
+      <div class="page-header">
+        <h1>Bảng điều khiển chính</h1>
+        <small>Trang chủ / Bảng điều khiển chính</small>
+      </div>
+
+      <div class="page-content">
+
+        <div class="analytics">
+
+          <div class="card">
+            <div class="card-head">
+              <h2>0</h2>
+              <span class="las la-user-friends"></span>
+            </div>
+            <div class="card-progress">
+              <small>Hoạt động của người dùng trong tháng</small>
+              <div class="card-indicator">
+                <div class="indicator one" style="width: 1%"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-head">
+              <h2>0</h2>
+              <span class="las la-eye"></span>
+            </div>
+            <div class="card-progress">
+              <small>Lượt xem trang</small>
+              <div class="card-indicator">
+                <div class="indicator two" style="width: 1%"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-head">
+              <h2>0</h2>
+              <span class="las la-envelope"></span>
+            </div>
+            <div class="card-progress">
+              <small>Lượng E-mail nhận được</small>
+              <div class="card-indicator">
+                <div class="indicator three" style="width: 1%"></div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+
+        <div class="records table-responsive">
+
+          <div class="record-header">
+            <div class="add">
+              <span>Mục lục</span>
+              <button>Thêm</button>
+            </div>
+
+            <div class="browse">
+              <input type="search" placeholder="Tìm kiếm" class="record-search">
+            </div>
+          </div>
+
+          <div>
+            <table width="100%">
+              <thead>
+                <tr>
+                  <th>#</th>
+                  <th><span class="las la-sort"></span> KHÁCH HÀNG</th>
+                  <th><span class="las la-sort"></span> NGÀY TẠO</th>
+                  <th><span class="las la-sort"></span> TÌNH TRẠNG</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>#1</td>
+                  <td>
+                    <div class="client">
+                      <div class="client-img bg-img" style="background-image: url(../../img/ava1.jfif)"></div>
+                      <div class="client-info">
+                        <h4>Nguyễn Yên Bình</h4>
+                        <small>binhny@gmail.com</small>
+                      </div>
+                    </div>
+                  </td>
+                  <td>
+                    Ngày 01 tháng 01 năm 2023
+                  </td>
+                  <td>
+                    <span class="offline">Offline</span>
+                  </td>
+                </tr>
+                <tr>
+                  <td>#2</td>
+                  <td>
+                    <div class="client">
+                      <div class="client-img bg-img" style="background-image: url(../../img/ava2.jfif)"></div>
+                      <div class="client-info">
+                        <h4>Lê Nam Hải</h4>
+                        <small>hailn@gmail.com</small>
+                      </div>
+                    </div>
+                  </td>
+                  <td>
+                    Ngày 01 tháng 01 năm 2023
+                  </td>
+                  <td>
+                    <span class="online">Online</span>
+                  </td>
+                </tr>
+                <tr>
+                  <td>#3</td>
+                  <td>
+                    <div class="client">
+                      <div class="client-img bg-img" style="background-image: url(../../img/ava3.jfif)"></div>
+                      <div class="client-info">
+                        <h4>Trương Thanh Tùng</h4>
+                        <small>tungtt@gmail.com</small>
+                      </div>
+                    </div>
+                  </td>
+                  <td>
+                    Ngày 01 tháng 01 năm 2023
+                  </td>
+                  <td>
+                    <span class="offline">Offline</span>
+                  </td>
+                </tr>
+                <tr>
+                  <td>#4</td>
+                  <td>
+                    <div class="client">
+                      <div class="client-img bg-img" style="background-image: url(../../img/ava4.jfif)"></div>
+                      <div class="client-info">
+                        <h4>Võ Thảo My</h4>
+                        <small>myvt@gmail.com</small>
+                      </div>
+                    </div>
+                  </td>
+                  <td>
+                    Ngày 01 tháng 01 năm 2023
+                  </td>
+                  <td>
+                    <span class="online">Online</span>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../img/favicon.png" type="image/x-icon">
+    <title>Durian Traceability For User</title>
+    <link rel="stylesheet" href="styleNguoiDung.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+    <nav class="nav">
+        <div class="logo-content">
+            <div class="logo">
+                <a href="#">
+                    <div class="logo-name">Durian<br>Traceability</div>
+                </a>
+            </div>
+            <i class='bx bx-menu' id="btn"></i>
+        </div>
+        <ul class="nav-list">
+            <li>
+                <a href="#">
+                    <i class='bx bx-search'></i>
+                    <input type="text" placeholder="Tìm kiếm...">
+                </a>
+                <span class="tooltip">Tìm kiếm</span>
+            </li>
+            <li class="header">
+                <span>
+                    <i class='bx bx-minus'></i>
+                    <span class="links-name">Sản phẩm</span>
+                </span>
+                <span class="tooltip">Sản phẩm</span>
+            </li>
+            <li>
+                <a href="./tatca/tatca.html">
+                    <i class='bx bx-shopping-bag'></i>
+                    <span class="links-name">Tất cả</span>
+                </a>
+                <span class="tooltip">Tất cả</span>
+            </li>
+            <li>
+                <a href="./daxoa/daxoa.html">
+                    <i class='bx bx-message-square-x'></i>
+                    <span class="links-name">Đã xóa</span>
+                </a>
+                <span class="tooltip">Đã xóa</span>
+            </li>
+            <li class="header">
+                <span>
+                    <i class='bx bx-minus'></i>
+                    <span class="links-name">Mã vạch sở hữu</span>
+                </span>
+                <span class="tooltip">Mã vạch sở hữu</span>
+            </li>
+            <li>
+                <a href="./mvtatca/mvtatca.html">
+                    <i class='bx bx-circle-three-quarter'></i>
+                    <span class="links-name">Tất cả</span>
+                </a>
+                <span class="tooltip">Tất cả</span>
+            </li>
+            <li>
+                <a href="./mvdaxoa/mvdaxoa.html">
+                    <i class='bx bx-message-square-x'></i>
+                    <span class="links-name">Đã xóa</span>
+                </a>
+                <span class="tooltip">Đã xóa</span>
+            </li>
+            <li class="header">
+                <span>
+                    <i class='bx bx-minus'></i>
+                    <span class="links-name">Tài khoản</span>
+                </span>
+                <span class="tooltip">Tài khoản</span>
+            </li>
+            <li>
+                <a href="./tttaikhoan/tttaikhoan.html">
+                    <i class='bx bxs-user'></i>
+                    <span class="links-name">Thông tin tài khoản</span>
+                </a>
+                <span class="tooltip">Thông tin</span>
+            </li>
+            <li>
+                <a href="./doimk/doimk.html">
+                    <i class='bx bx-key'></i>
+                    <span class="links-name">Đổi mật khẩu</span>
+                </a>
+                <span class="tooltip">Đổi mật khẩu</span>
+            </li>
+
+        </ul>
+        <div class="profile-content">
+            <div class="profile">
+                <div class="profile-details">
+                    <div class="name-job">
+                        <div class="name">Người dùng</div>
+                        <div class="job">Cá nhân</div>
+                    </div>
+                </div>
+                <i class='bx bx-log-out btnout2' id="log-out">
+                    <span class="tooltip" onclick="logoutBtn2">Đăng xuất</span>
+                </i>
+            </div>
+        </div>
+    </nav>
+
+    <div class="home-content">
+        <div class="row">
+            <i class='bx bx-refresh'></i>
+            <div class="title">Tổng quan</div>
+
+            <div class="card-content">
+                <div class="text-center">
+                    <h3>0</h3>
+                    <p class="text-muted">Sản phẩm</p>
+
+                </div>
+                <div class="text-center">
+                    <h3>0</h3>
+                    <p class="text-muted">Mã vạch sở hữu</p>
+
+                </div>
+                <div class="text-center">
+                    <h3>0</h3>
+                    <p class="text-muted">Tổng lượt xem</p>
+                </div>
+                <div class="text-center-1">
+                    <h3>0</h3>
+                    <p class="text-muted">Đánh giá</p>
+                </div>
+            </div>
+        </div>
+        <div class="row-2">
+            <div class="card-header">
+                <i class='bx bx-refresh'></i>
+                <div class="title">Lịch sử tra cứu mới nhất</div>
+            </div>
+            <div class="card-header">
+                <i class='bx bx-refresh'></i>
+                <div class="title">Theo quốc gia, vùng lãnh thổ</div>
+            </div>
+        </div>
+
+        <script src="mainNguoiDung.js"></script>
+</body>
+
+</html>

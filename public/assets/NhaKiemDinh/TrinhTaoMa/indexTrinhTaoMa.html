@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../../img/favicon.png" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+    <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styleTrinhTaoMa.css">
+    <title>Durian Traceability For Accreditation Institute</title>
+</head>
+
+<body>
+    <input type="checkbox" id="menu-toggle">
+    <div class="sidebar">
+        <div class="side-content">
+            <div class="profile">
+                <div class="profile-img bg-img" style="background-image: url(../../img/accreditation-institute.png)">
+                </div>
+                <h4>Accreditation Institute</h4>
+                <small>Nhà kiểm định</small>
+            </div>
+
+            <div class="side-menu">
+                <ul>
+                    <li>
+                        <a href="" class="active">
+                            <span class="lab la-centercode"></span>
+                            <small>Trình tạo mã</small>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="../BangKiemDinh/indexBangKiemDinh.html">
+                            <span class="las la-clipboard-list"></span>
+                            <small>Bảng thông tin kiểm định</small>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="main-content">
+
+        <header>
+            <div class="header-content">
+                <label for="menu-toggle">
+                    <span class="las la-bars"></span>
+                </label>
+
+                <div class="header-menu">
+                    <label for="">
+                        <span class="las la-search"></span>
+                    </label>
+
+                    <div class="notify-icon">
+                        <span class="las la-envelope"></span>
+                        <span class="notify">0</span>
+                    </div>
+
+                    <div class="notify-icon">
+                        <span class="las la-bell"></span>
+                        <span class="notify">0</span>
+                    </div>
+
+                    <div class="user">
+                        <div class="bg-img" style="background-image: url(img/1.jpeg)"></div>
+
+                        <span class="las la-power-off"></span>
+                        <span><a href="../../Đăng nhập/IndexLogin.html" style="color: black;">Đăng xuất</a></span>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+
+        <main>
+
+            <div class="page-header">
+                <h1>Trình tạo mã</h1>
+                <small>Trang chủ / Trình tạo mã</small>
+            </div>
+
+            <div class="container">
+                <h1>Tạo Mã <br><span>Tự Động</span></h1>
+                <div class="display">
+                    <input type="text" id="password" placeholder="mã tự động">
+                    <img src="../../img/copy.png">
+                </div>
+                <button onclick="createPassword()">Tạo mã</button>
+            </div>
+        </main>
+    </div>
+    <script>
+        const passwordBox = document.getElementById("password")
+        const length = 10;
+
+        const upper = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+        const lower = "abcdefghijklmnopqrstuvwxyz";
+        const number = "0123456789";
+
+        const all = upper + lower + number;
+
+        function createPassword() {
+            let password = "";
+            password += upper[Math.floor(Math.random() * upper.length)];
+            password += lower[Math.floor(Math.random() * lower.length)];
+            password += number[Math.floor(Math.random() * number.length)];
+
+            while (length > password.length) {
+                password += all[Math.floor(Math.random() * all.length)];
+            }
+
+            passwordBox.value = password;
+        }
+    </script>
+</body>
+
+</html>
